@@ -11,6 +11,8 @@ const ProductItem = ({ product }) => {
 
         <div className={classes["product-content"]}>
           <h3>{product.title}</h3>
+
+          <p>$ {product.price}</p>
         </div>
       </div>
     </Link>
