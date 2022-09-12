@@ -9,14 +9,14 @@ const Header = () => {
     <div className={classes.header}>
       <Container>
         <nav className={classes.nav}>
-          <Link to="/">
+          <Link to="/home">
             <h1>Shop</h1>
           </Link>
 
           <ul className={classes["nav-links"]}>
             <li>
               <NavLink
-                to="/"
+                to="home"
                 className={({ isActive }) => (isActive ? classes.active : "")}
               >
                 Home
@@ -24,7 +24,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="about"
                 className={({ isActive }) => (isActive ? classes.active : "")}
               >
                 About
@@ -33,10 +33,19 @@ const Header = () => {
 
             <li>
               <NavLink
-                to="/contact"
+                to="contact"
                 className={({ isActive }) => (isActive ? classes.active : "")}
               >
                 Contact Us
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="profile"
+                className={({ isActive }) => (isActive ? classes.active : "")}
+              >
+                Profile
               </NavLink>
             </li>
           </ul>
