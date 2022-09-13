@@ -3,10 +3,10 @@ import React from "react";
 import classes from "./ProductList.module.css";
 import ProductItem from "./ProductItem";
 
-const ProductList = ({ products }) => {
+const ProductList = ({ products, heading }) => {
   return (
     <div>
-      <h1 className={classes["list-heading"]}>Products</h1>
+      <h1 className={classes["list-heading"]}>{heading}</h1>
 
       <div className={classes["list"]}>
         {products.map((product) => (

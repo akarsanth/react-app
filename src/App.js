@@ -10,6 +10,8 @@ import ProductDetail from "./pages/ProductDetail";
 import Profile from "./pages/Profile";
 import Address from "./components/profile/Address";
 import Dashboard from "./components/profile/Dashboard";
+import AccountDetails from "./components/profile/AccountDetails/AccountDetails";
+import CategoryDetail from "./pages/CategoryDetail";
 
 function App() {
   return (
@@ -25,10 +27,12 @@ function App() {
         <Route path="profile" element={<Profile />}>
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="address" element={<Address />} />
+          <Route path="account" element={<AccountDetails />} />
         </Route>
 
         {/* Dynamic route for product detail page */}
         <Route path="product/:id" element={<ProductDetail />} />
+        <Route path="category/:id" element={<CategoryDetail />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
