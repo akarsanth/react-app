@@ -27,11 +27,13 @@ function App() {
         <Route path="profile" element={<Profile />}>
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="address" element={<Address />} />
+          {/* Component Lifecycle Assignment */}
           <Route path="account" element={<AccountDetails />} />
         </Route>
 
         {/* Dynamic route for product detail page */}
         <Route path="product/:id" element={<ProductDetail />} />
+        {/* Category Component added for Component Lifecycle Assignment */}
         <Route path="category/:id" element={<CategoryDetail />} />
 
         <Route path="*" element={<NotFound />} />
